@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion del DOM Básica</title>
+</head>
+<body>
+    <h1>Manipulacion del DOM Básica</h1>
+    <!-- agregando eventos directamente en los selectores / Not Cool-->
+    <!--
+    <input onchange="console.log('Se cambio el valor de la caja 1')" type="text" id="calculo1" placeholder="Ingresa un Número">
+    <input onchange="console.log('Se cambio el valor de la caja 2')" type="text" id="calculo2" placeholder="Ingresa un Número">
+    <button onclick="console.log('Se hizo clic en el boton')" id="btnCalcular">Calcular</button>
+    -->
+
+    <!-- Llamando a la una funcion con eventos-->
+    <!--
+    <input onchange="fnCambiaCaja('calculo1');" type="text" id="calculo1" placeholder="Ingresa un Número">
+    <input onchange="fnCambiaCaja('calculo2');" type="text" id="calculo2" placeholder="Ingresa un Número">
+    <button onclick="fnClickBtn();" id="btnCalcular">Calcular</button>
+    -->
+    <!-- gregando evento al selector mediante addEventListener-->
+    <input type="text" id="calculo1" placeholder="Ingresa un Número">
+    <input type="text" id="calculo2" placeholder="Ingresa un Número">
+    <button id="btnCalcular">Calcular</button>
+    <p id="pResult"></p>
+    <script src="./12-script.js"></script>
+</body>
+</html>
